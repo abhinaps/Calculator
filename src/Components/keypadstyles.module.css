@@ -1,0 +1,29 @@
+.keypadContainer{
+    width: 25%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+    justify-content: space-evenly;
+}
+button{
+    font-size: 1.2rem;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+    background-color: rgb(160, 160, 160);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 15px;
+    padding: 1rem;
+}
+.allclear{
+    grid-column: 1/3;
+}
+.result{
+    grid-column: 3/5;
+}
+.allclear, .result, .highlight{
+    background-color:orangered;
+}
